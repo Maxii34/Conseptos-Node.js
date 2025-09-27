@@ -11,12 +11,12 @@ let max = 100;
 
 if(argv.length === 2){
     //pasar los argv a numeros
-    const minparse = parseInt(argv[0]);
-    const maxparse = parseInt(argv[1]);
+    const nun1 = parseInt(argv[0]);
+    const nun2 = parseInt(argv[1]);
     //preguntar si los 2 numeros son validos
-    if(!isNaN(minparse) && !isNaN(maxparse) && minparse < maxparse){
-        min = minparse;
-        max = maxparse;
+    if(!isNaN(nun1) && !isNaN(nun2) && nun1 < nun2){
+        min = Math.min(nun1, nun2);
+        max = Math.max(nun1, nun2);
     }else{
         console.log("Rango invalidos, usaremos los valores por defecto min=1 y max=100");
     }
